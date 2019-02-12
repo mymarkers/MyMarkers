@@ -13,10 +13,10 @@ const markerSchema = new Schema({
     type: String,
     required: true,
   },
-  // comments: [{type:Schema.Types.ObjectId, ref: 'Comment'}],
+  comments: [{type:Schema.Types.ObjectId, ref: 'Comment'}],
   tags: Array,
-  // reactions: Array,
-  // picPath: String,
+  reactions: Array,
+  picPath: String,
 });
 
 const Marker = mongoose.model('Marker', markerSchema);
